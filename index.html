@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNCODE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="">Home</a>
+        <a href="">About us</a>
+        <a href=""><i class="fa-solid fa-code"></i></a>
+        <a href="">What's new</a>
+        <a href=""></a>
+        <div class="sign-in-container">
+            <div class="auth-buttons" id="auth-buttons">
+            <div class="sign-in">
+                <button id="signup-button"><p>Sign up</p></button>
+            </div>
+            <div class="sign-in">
+                <button id="login-button"><p>Log in</p></button>
+            </div>
+        </div>
+        <div class="user-menu hidden" id="user-menu">
+            <span id="username-display"></span>
+            <button id="logout-button">Logout</button>
+        </div>
+        </div>
+    <div id="auth-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="login">Sign in</button>
+                <button class="tab-button" data-tab="signup">Log in</button>
+            </div>
+            <div class="tab-content">
+                <div id="login-tab" class="tab-pane active">
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" id="login-username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <button type="submit">Sign in</button>
+                    </form>
+                </div>
+                <div id="signup-tab" class="tab-pane">
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <label for="signup-username">Username</label>
+                            <input type="text" id="signup-username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">Email</label>
+                            <input type="email" id="signup-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-confirm-password">Confirm Password</label>
+                            <input type="password" id="signup-confirm-password" required>
+                        </div>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>WANNA BECOME A SOFTWARE ENGINEER</h1>
+            <p class="subtitle">Start exploring digital world</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="languages-section">
+                <h2 class="section-title">Ngôn ngữ lập trình</h2>
+                <div class="languages-grid">
+                    <div class="language-card" data-language="python">
+                        <div class="language-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="language-name">Python</div>
+                    </div>
+                    <div class="language-card" data-language="java">
+                        <div class="language-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="language-name">Java</div>
+                    </div>
+                    <div class="language-card" data-language="cpp">
+                        <div class="language-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="language-name">C/C++</div>
+                    </div>
+                    <div class="language-card" data-language="csharp">
+                        <div class="language-icon">
+                            <i class="fas fa-copyright"></i>
+                        </div>
+                        <div class="language-name">C#</div>
+                    </div>
+                    <div class="language-card" data-language="javascript">
+                        <div class="language-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="language-name">JavaScript</div>
+                    </div>
+                    
+                    <div class="language-card" data-language="html">
+                        <div class="language-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="language-name">HTML/CSS</div>
+                    </div>
+                    <div class="language-card" data-language="swift">
+                        <div class="language-icon">
+                            <i class="fa-brands fa-swift"></i>
+                        </div>
+                        <div class="language-name">SWIFT</div>
+                    </div>  
+
+                    <div class="language-card" data-language="golang">
+                        <div class="language-icon">
+                            <i class="fa-brands fa-golang"></i>
+                        </div>
+                        <div class="language-name">GOLANG</div>
+                    </div>
+                    
+                    <div class="language-card" data-language="rust">
+                        <div class="language-icon">
+                            <i class="fa-brands fa-rust"></i>
+                        </div>
+                        <div class="language-name">RUST</div>
+                    </div>
+                    <div class="language-card" data-language="php">
+                        <div class="language-icon">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <div class="language-name">PHP</div>
+                    </div>
+                    <div class="language-card" data-language="react">
+                        <div class="language-icon">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="language-name">REACT NATIVE</div>
+                    </div>
+                    <div class="language-card" data-language="node" >
+                        <div class="language-icon">
+                            <i class="fa-brands fa-node"></i>
+                        </div>
+                        <div class="language-name">NODE JS</div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="curriculum-section">
+                <h2 class="section-title">Giáo trình học tập</h2>
+                <div class="curriculum-content">
+                    <div class="placeholder" id="placeholder">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Chọn một ngôn ngữ để xem giáo trình</h3>
+                    </div>
+                    
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <p>Đang tải giáo trình...</p>
+                    </div>
+                    
+                    <div class="curriculum-list" id="curriculum-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 LEARNCODE.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
