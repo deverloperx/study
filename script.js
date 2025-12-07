@@ -99,18 +99,18 @@ const mockApiData = {
         }
 
         async function fetchCurriculum(language) {
-            try {
-                const response = await fetch(`https://api.github.com/search/repositories?q=javascript+tutorial&sort=stars {language}`);
-                if (!response.ok) {
-                    throw new Error('Không thể tải dữ liệu');
-                }
-                const data = await response.json();
-                return data;
-            } catch (error) {
-                console.error('Lỗi khi tải giáo trình:', error);
-                return [];
-            }
+    try {
+        const response = await fetch(`https://your-api.com/curriculum?language=${language}`);
+        if (!response.ok) {
+            throw new Error('Không thể tải dữ liệu');
         }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Lỗi khi tải giáo trình:', error);
+        return [];
+    }
+}
 
 
         // Auth system
